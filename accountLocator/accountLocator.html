@@ -1,0 +1,15 @@
+<template>
+    
+    <lightning-layout horizontal-align="space" multiple-rows>
+        <lightning-layout-item size="12" medium-device-size="12" padding="around-small">
+            <c-account-search onsearch={handleSearch}></c-account-search>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" medium-device-size="6" padding="around-small">
+            <c-account-list-l-w-c accounts={accounts}></c-account-list-l-w-c>
+        </lightning-layout-item>
+        <lightning-layout-item size="12" medium-device-size="6" padding="around-small">
+            <c-account-map accounts={accounts}></c-account-map>
+        </lightning-layout-item>
+    </lightning-layout>
+
+</template>
